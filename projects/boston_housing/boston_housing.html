@@ -12206,8 +12206,8 @@ The result of 0.923 is near to 1 and 1 stands for a nearly perfect predition of 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-If we use all of the data to train a model, we'll probably cause overfitting - the model will probably perfectly adapt to all of the datapoints, but it will have a poor efficiency. So if the test size is too small - (eg. 1% of the whole dataset) - it might cause overfitting.
-On the other hand, if the train size is too small (eg. 1%) the model might not reflect the information in data and it might perform very bad on the testing set - that's underfitting.</p>
+The main benefit is that by dividing the dataset into training set and testing set we are simulating real-life scenario for using our model, thus it's more accurate on real data. We use training set to actually develop our model (find the best parameters) and then, after fiding the best parameters we can use test set just to test the model accuracy on the other set than the one used for the model development.</p>
+<p>Also, by using testing set we can check our model for overfitting - if the accuracy on training set is high but the one on testing is low we can say that our model overfits.</p>
 
 </div>
 </div>
